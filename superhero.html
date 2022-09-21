@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		
+		<title>Guy Person</title>
+		<link rel="stylesheet" href="superherostyles.css">
+		
+	</head>
+
+	<body>
+		
+		<header>
+			
+			<img src="guy.jpg">
+			<h1>Guy</h1>
+			<h2>Person</h2>
+		
+		</header>
+		
+		<h3>Guy ja hänen päivä</h3>
+		<p>Guy Person on tavallinen mies. Hän on 43-vuotias. Guylla on vaimo ja kaksi lasta. Guy asuu Michiganissa, Yhdysvalloissa.  Guy herää joka päivä 8:00 AM ja lähte toihin toimistolle. 8 tunnin työpäivän jälkeen Guy tulee takaisin kotiin ja syö perheensä kanssa päivällisen. Sen jälkeen hän istuu sohvalle kaljan kanssa ja katsoo televisiota. Illalla Guy käy suihkussa ja menee nukkumaan.</p>
+		
+		<h3>Guyn kaverit</h3>
+		<div class="slideshow-container">
+
+			<div class="mySlides fade">
+				<div class="numbertext">1 / 4</div>
+				<img src="john.jpg" style="width:200px; height:200px">
+				<div class="text">John</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">2 / 4</div>
+				<img src="jack.jpg" style="width:200px; height:200px">
+				<div class="text">Jack</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">3 / 4</div>
+				<img src="peter.jpg" style="width:200px; height:200px">
+				<div class="text">Peter</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">4 / 4</div>
+				<img src="mike.jpg" style="width:200px; height:200px">
+				<div class="text">Mike</div>
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)">❮</a>
+			<a class="next" onclick="plusSlides(1)">❯</a>
+
+			</div>
+			<br>
+
+		<script>
+			let slideIndex = 1;
+			showSlides(slideIndex);
+			
+			function plusSlides(n) {
+				showSlides(slideIndex += n);
+			}
+
+			function currentSlide(n) {
+				showSlides(slideIndex = n);
+			}
+			
+			function showSlides(n) {
+				let i;
+				let slides = document.getElementsByClassName("mySlides");
+				let dots = document.getElementsByClassName("dot");
+				if (n > slides.length) {slideIndex = 1}    
+				if (n < 1) {slideIndex = slides.length}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";  
+				}
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex-1].style.display = "block";  
+				dots[slideIndex-1].className += " active";
+			}
+		</script>
+		<p>Guylla on 5 kaveria. Heidän nimet on John, Jack, Peter ja Mike. Vieressä kuvat kavereista.</p>
+		<p>John: 47-vuotias, tykkää grillata, asuu samassa naapurustossa.</p>
+		<p>Jack: 52-vuotias, metsästää Johnille grillattavaa.</p>
+		<p>Peter: 40-vuotias, työskentelee samassa toimistossa kun Guy, kalastaa vapaa-ajalla.</p>
+		<p>Mike: 41-vuotias, metsästää Jackin kanssa, vihaa Guyn vaimoa.</p>
+		
+	</body>
+
+</html>
