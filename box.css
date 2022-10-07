@@ -2,3 +2,11 @@ body {
 	background-color: white;
 	font-family: verdana;
 }
+
+.boxmodel {
+	border-radius: 3px solid green;
+	font-size: 20px;
+	width: 50%;
+	height: 500px;
+	background-color:#fefafe;
+}
