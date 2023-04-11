@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="number" class="form-control"></input>
+    <button onClick="calculate()">Add 100</button>
+    <h1>The total is: <span>N/A</span></h1>
+
+    <script>
+        var num = 100;
+
+        function calculate() {
+            var input = document.querySelector(".form-control")
+            var value = Number(input.value)
+            var totalValue = value + num;
+
+            var h1 = document.querySelectorAll("h1")[0]
+            var span = h1.querySelector("span")
+
+            span.innerText = totalValue
+        }
+    </script>
+    
+    <!--<h1>events</h1>
+    <button class="btn prim" type="button" onclick="clickMe()">CLICK</button>
+    <script>
+        var totalClicks = 0
+        function clickMe() {
+            totalClicks++;
+            console.log(totalClicks)
+        }
+    </script>-->
+</body>
+</html>
