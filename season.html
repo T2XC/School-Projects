@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Birthday Season</h1>
+	<input type="number" class="month" placeholder="Birthday month (0-12)"></input>
+	<button onclick="birthdaySeason()">Submit</button>
+	<h3 class="season"></h3>
+
+	<script>
+		function birthdaySeason() {
+            var input = document.querySelector(".month").value;
+            var month = Number(input)
+
+			if (month == 12 || month == 1 || month == 2) {
+				season = "Winter";
+			} else if (month == 3 || month == 4 || month == 5) {
+				season = "Spring";
+			} else if (month == 6 || month == 7 || month == 8) {
+				season = "Summer";
+			} else if (month == 9 || month == 10 || month == 11) {
+				season = "Fall";
+			} else {
+				season = "Invalid input";
+			}
+
+			document.querySelector(".season").innerHTML = season;
+		}
+	</script>
+</body>
+</html>
