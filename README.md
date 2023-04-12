@@ -1,3 +1,5 @@
-# School Projects
+# t2xc.github.io
 
-Stuff I made in school
+My main page
+
+I upload projects here
