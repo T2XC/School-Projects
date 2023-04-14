@@ -1,13 +1,24 @@
-/* Reset default margin and padding */
+/* Reset user agent stylesheet */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+    box-sizing: border-box; /* Include padding and border in total width and height */
 }
 
+/* Whole page */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.5;
+    font-family: Arial, sans-serif; /* Page font is Arial */
+    line-height: 1.5; /* Space between lines of text */
+}
+
+h1 {
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+  
+p {
+    font-size: 2rem;
+    margin-bottom: 40px;
 }
   
 /* Style the navigation bar */
@@ -97,7 +108,7 @@ nav {
     transition: all 0.3s ease-in-out;
 }
   
-  .login a:hover {
+.login a:hover {
     background-color: #f5f5f5;
 }
 
@@ -118,18 +129,8 @@ header {
     max-width: 800px;
     padding: 0 20px;
 }
-  
-h1 {
-    font-size: 5rem;
-    margin-bottom: 20px;
-}
-  
-p {
-    font-size: 2rem;
-    margin-bottom: 40px;
-}
-  
-  .btn {
+
+.btn {
     display: inline-block;
     padding: 15px 30px;
     background-color: #fff;
@@ -160,13 +161,6 @@ p {
     width: 45%;
     margin-right: 5%;
 }
-  
-.paragraph-left img {
-    width: 100%;
-    height: auto;
-    border-radius: 30px;
-}
-  
 
 .paragraph-right {
     width: 45%;
@@ -179,7 +173,14 @@ p {
     border-radius: 30px;
 }
 
+.paragraph-left img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+
 @media only screen and (max-width: 768px) {
+
     .paragraph-container {
       flex-direction: column;
     }
