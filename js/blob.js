@@ -4,7 +4,7 @@ const ctx = canvas.getContext("2d");
 let x = 100;
 let y = 100;
 let radius = 50;
-let speed = 10;
+let speed = 5;
 
 let upPressed = false;
 let downPressed = false;
