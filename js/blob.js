@@ -54,18 +54,18 @@ function inputs() {
 }
 
 function drawGreenBlob() {
-  ctx.fillStyle = "green";
+  ctx.fillStyle = "purple";
   if (upPressed) {
-    ctx.fillStyle = "red";
+    ctx.fillStyle = "blue";
   }
   if (downPressed) {
     ctx.fillStyle = "blue";
   }
   if (leftPressed) {
-    ctx.fillStyle = "yellow";
+    ctx.fillStyle = "blue";
   }
   if (rightPressed) {
-    ctx.fillStyle = "purple";
+    ctx.fillStyle = "blue";
   }
 
   ctx.beginPath();
