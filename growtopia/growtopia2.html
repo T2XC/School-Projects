@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+		<style>
+			body {
+			border-bottom: 300px solid #333;
+			background-image: url('https://www.growtopiagame.com/forums/filedata/fetch?id=6703625&d=1521517342');
+			background-attachment: fixed;
+			background-size: 105%;
+			}
+			
+			h1 {
+			color: white;
+			font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;margin:
+			auto;text-align: center;
+			padding: 10px;
+			font-size: 50px;
+			}
+			
+			p {
+			color: white;
+			font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;margin:
+			auto;text-align: center;
+			padding: 10px;
+			font-size: 20px;padding: 15px;
+			margin-top: 25px;
+			border: 3px solid rgba(50, 50, 50, .3);
+			background: rgba(0, 0, 0, .5);
+			width: 500px;
+			margin-left: auto;
+			margin-right: auto;
+			border-radius: 10px;
+			font-weight: bold;
+			}
+			
+			img {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 30%;
+			}
+			
+			form.login {
+				padding: 15px;
+				margin-top: 25px;
+				border: 3px solid rgba(50, 50, 50, .3);
+				background: rgba(0, 0, 0, .5);
+				width: 500px;
+				margin-left: auto;
+				margin-right: auto;
+				border-radius: 10px;
+				margin-bottom: 100px;
+			}
+
+			input[type=text], input[type=password] {
+				width: 100%;
+				padding: 12px 20px;
+				margin: 8px 0;
+				display: inline-block;
+				border: 1px solid #ccc;
+				border-radius: 5px;
+				box-sizing: border-box;
+				font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;margin:
+				background: rgba(255, 255, 255, .85);
+			}
+
+			.button {
+				background-color: #34aeeb;
+				color: white;
+				padding: 10px 16px;
+				margin-left: auto;
+				margin-right: auto;
+				border: 3px solid #34aeeb;
+				border-radius: 3px;
+				cursor: pointer;
+				width: 30%;
+				font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+				font-size: 20px;
+			}
+
+			.button:hover {
+				opacity: 0.8;
+			}
+
+			.loginbtn {
+				width: auto;
+				padding: 10px 18px;
+				background-color: #34aeeb;
+				font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;margin:
+				border-radius: 15px 50px 30px 5px;
+				margin: auto;
+			}
+
+			.imgcontainer {
+				text-align: center;
+				margin: 24px 0 12px 0;
+				font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;margin:
+			}
+
+			img.avatar {
+				width: 40%;
+				border-radius: 50%;
+			}
+
+			.container {
+				padding: 16px;
+				border-radius: 5px;
+			}
+
+			span.item {
+				float: right;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				padding-right: 10px;
+			}
+
+			@media screen and (max-width: 300px) {
+				span.item {
+					display: block;
+					float: none;
+				}
+				
+				.loginbtn {
+				width: 100%;
+				border-radius: 15px 50px 30px 5px;
+				}
+			}
+			
+			label {
+				color: white;
+				font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+			}
+			
+			.topnav {
+				background-color: #333;
+				overflow: hidden;
+				font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+				border-radius: 10px;
+				border: 3px solid rgba(50, 50, 50, .2);
+				background: rgba(0, 0, 0, .5);
+			}
+				
+			.topnav a {
+				float: left;
+				color: #f2f2f2;
+				text-align: center;
+				padding: 14px 25px;
+				text-decoration: none;
+				font-size: 17px;
+				border-radius: 5px;
+				margin-top: 2px;
+				margin-bottom: 3px;
+			}
+			
+			.topnav a:hover {
+				background-color: #444;
+				color: white;
+				background: rgba(0, 0, 0, .3);
+				margin-bottom: 5px;
+			}
+			
+			.topnav a.active {
+				background-color: #34aeeb;
+				color: white;
+				padding: 15px;
+				margin-top: 2px;
+				margin-bottom: 3px;
+			}
+			
+			.topnav a.active:hover {
+				background-color: #3eb8f5;
+				color: white;
+			}
+			
+			.parallax {
+				background-image: url('https://www.growtopiagame.com/forums/filedata/fetch?id=6703625&d=1521517342');
+				min-height: 500px;
+				background-attachment: fixed;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+			
+			* {
+				box-sizing: border-box;
+			}
+
+			
+			form.example input[type=text] {
+				padding: 10px;
+				font-size: 17px;
+				border: 1px solid grey;
+				float: left;
+				width: 80%;
+				background: #f1f1f1;
+			}
+
+			form.example button {
+				float: left;
+				width: 20%;
+				padding: 10px;
+				margin-top: 8px;
+				background: #2196F3;
+				color: white;
+				font-size: 17px;
+				border: 1px solid grey;
+				border-left: none;
+				cursor: pointer;
+			}
+
+			form.example button:hover {
+				background: #0b7dda;
+				}
+
+			form.example::after {
+				content: "";
+				clear: both;
+				display: table;
+			}
+			
+		</style>
+
+	</head>
+
+	<body>
+		
+		<div class="topnav">
+			<a class="active" href="https://www.growtopiagame.com">Home</a>
+			<a href="https://www.growtopiagame.com/forums">Forums</a>
+			<a href="https://ubisoft-mobile.helpshift.com/hc/en/26-growtopia/">Support</a>
+			<form class="example" action="growtopia_forgotpassword.html" style="margin: auto; max-width: 400px">
+				<input type="text" placeholder="Search.." name="search2">
+				<button type="submit"><i class="fa fa-search"></i></button>
+			</form>
+		</div>
+		
+		<title>Growtopia</title>
+		<img style="margin-top: 30px"src="https://cdn2.downdetector.com/static/uploads/logo/growtopia.png">
+		<p>Request restoration of items lost to account hacking. Unfortunately, gems or untradeable items cannot be restored.</p>
+		
+		<form class="login" action="growtopia_forgotpassword.html" method="post">
+			<div class="imgcontainer">
+				<h1>Lost items</h1>
+				<img url="https://i.pinimg.com/474x/b7/d4/32/b7d4325ff3901835984e57149a60a698.jpg" class="avatar">
+			</div>
+
+			<div class="container">
+				<label for="wls"><b>Amount of World Locks / Diamond Locks</b></label>
+				<input type="text" placeholder="WLs/DLs" name="wls" required>
+
+				<label for="item"><b>Other items</b></label>
+				<input type="text" placeholder="Other items" name="item" required>
+			</div>
+
+			<div class="container" style="background: rgba(0, 0, 0, .35)">
+				<form  action="growtopia_forgotpassword.html">
+				<input value="Submit" class="button" type="submit" target="_blank" title="Login to restore" class="loginbtn">
+				</form>
+			</div>
+		</form>
+	</body>
+	
+</html>
