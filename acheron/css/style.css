@@ -1,0 +1,621 @@
+body {
+    background-color: #000; /*Website has a black background*/
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.header {
+	/*Header mountain image fades to black on the bottom*/
+    background-image: linear-gradient(to bottom, transparent, #000000), url("https://r4.wallpaperflare.com/wallpaper/384/818/513/himalayas-clouds-landscape-snow-wallpaper-c8364dc830107c68c0ccf1cef8d2446a.jpg");
+    background-image: -webkit-linear-gradient(top, transparent, #000000), url("https://r4.wallpaperflare.com/wallpaper/384/818/513/himalayas-clouds-landscape-snow-wallpaper-c8364dc830107c68c0ccf1cef8d2446a.jpg");
+    background-image: -moz-linear-gradient(top, transparent, #000000), url("https://r4.wallpaperflare.com/wallpaper/384/818/513/himalayas-clouds-landscape-snow-wallpaper-c8364dc830107c68c0ccf1cef8d2446a.jpg");
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+
+	background-repeat: no-repeat; /*Header image does not repeat*/
+	height: 100vh; /*Header height*/
+	max-width: 100vw;
+	max-height: 100vh;
+	background-size: cover; /*Image covers whole header*/
+	background-position: center center; /*Header image is always centered*/
+	margin: none; /*No margin*/
+	padding: none; /*No padding*/
+}
+
+@media(min-width: 960px) {
+    #titletop {
+		display: none;
+	}
+}
+
+.topbar {
+	background-color: rgba(0,0,0,.5);
+	margin: 5px;
+	border-radius: 10px;
+	position: fixed;
+	float: center;
+	width: 99.4%;
+	z-index: 100;
+}
+
+@media (max-width:960px) {
+	.navbtn {
+		display: none;
+	}
+
+	.navbtn2 {
+		display: none;
+	}
+}
+
+.navbtn {
+	text-align: left;
+	padding-left: 60px;
+	line-height: 70px;
+	color: white;
+	text-decoration: none;
+	font-size: 30px; /*Font size*/
+	font-family: helvetica bold, Helvetica, Arial; /*Helvetica font*/
+	font-weight: 300; /*Font weight*/
+	vertical-align: middle;
+	border: none;
+}
+
+button.navbtn2 {
+	text-align: left;
+	padding-left: 60px;
+	color: white;
+	text-decoration: none;
+	font-size: 30px; /*Font size*/
+	font-family: helvetica bold, Helvetica, Arial; /*Helvetica font*/
+	font-weight: 300; /*Font weight*/
+	vertical-align: middle;
+	border: none;
+	background-color: rgba(0,0,0,.0)
+}
+
+h1 {
+	color: white; /*Text is white*/
+	font-family: helvetica bold, Helvetica, Arial; /*Helvetica font*/
+	font-weight: 400; /*Font weight*/
+	margin-top: 15px; /*Space on top*/
+	margin-left: 60px; /*Space to left*/
+	text-align: left; /*Text is on the left side*/
+	font-size: 30px; /*Font size*/
+	float: left;
+}
+
+h2 {
+	color: white; /*Text is white*/
+	font-family: helvetica bold, Helvetica, Arial; /*Helvetica font*/
+	font-weight: 600; /*Font weight*/
+	padding-top: 300px;
+	margin: 0;
+	text-align: center; /*Text is in the middle*/
+	font-size: 75px; /*Font size*/
+}
+
+h3 {
+	color: white; /*Text is white*/
+	font-family: helvetica bold, Helvetica, Arial; /*Helvetica font*/
+	font-weight: 450; /*Font weight*/
+	padding-top: 50px;
+	text-align: center; 
+	font-size: 25px; /*Font size*/
+}
+
+h3.subtitles {
+	font-size: 45px; /*Font size*/
+}
+
+#getstarted {
+	background-color: rgba(0,0,0,.8); /*Get Started button is a transparent black*/
+	color: white;	/*Text is white*/
+	border: 0; /*No border*/
+	width: 15%; /*Button width is 15% of the page's width*/
+	height: 50px; /*Height is 50 pixels*/
+	text-align: center; /*Text aligns to the center of the button*/
+	margin: auto; /*Something that helps the button work*/
+	display: block; /*Something that helps the button work*/
+	font-size: 20px; /*Font size is 20 pixels*/
+	font-family: helvetica bold, Helvetica, Arial; /*Helvetica font*/
+	font-weight: 450; /*Font weight*/
+	border-radius: 10px; /*Border corners round by 10 pixels*/
+	margin-top: 70px; /*70 pixels space between button and heading*/
+}
+
+.videos {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 80px;
+}
+
+.video {
+	width: 24.66%;
+	margin: auto;
+}
+
+p.story {
+	color: white; /*Text is white*/
+	font-family: helvetica bold, Helvetica, Arial; /*Helvetica font*/
+	font-weight: 450; /*Font weight*/
+	padding-top: 50px; /*50 pixels space to top of division*/
+	text-align: center; /*Text aligns to the center*/
+	font-size: 25px; /*Font size*/
+	margin-left: 15%; /*15% space from the left*/
+	margin-right: 15%; /*15% space from the right*/
+}
+
+:root {
+  --surface-color: #fff;
+  --curve: 40;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 4rem 5vw;
+  list-style-type: none;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.card {
+  position: relative;
+  display: block;
+  height: 100%;  
+  border-radius: calc(var(--curve) * 1px);
+  overflow: hidden;
+  text-decoration: none;
+  background-color: #111;
+  height: 680px;
+  box-shadow: 0px 8px #e06100;
+}
+
+.card__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;      
+  border-radius: calc(var(--curve) * 1px);    
+  background-color: #333;      
+  transform: translateY(100%);
+  transition: .3s ease-in-out;
+}
+
+.card:hover .card__overlay {
+  transform: translateY(0);
+}
+
+.card__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  padding: 2em;
+  border-radius: calc(var(--curve) * 1px) calc(var(--curve) * 1px) 0 0;    
+  background-color: #333;
+  transform: translateY(-100%);
+  transition: .3s ease-in-out;
+}
+
+.card__arc {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 100%;
+  right: 0;      
+  z-index: 1;
+}
+
+.card__arc path {
+  fill: var(--surface-color);
+}       
+
+.card:hover .card__header {
+  transform: translateY(0);
+}
+
+.card__thumb {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;      
+  border-radius: 50%; /*Border rounding*/
+}
+
+.card__title {
+  font-size: 30px; /*Font size*/ 
+  margin: 0 0 .3em;
+  color: #fff;
+}
+
+.card__tagline {
+  display: block;
+  margin: 25px 0;
+  font-family: helvetica bold, Helvetica, Arial; /*Helvetica font*/
+  font-size: .8em; /*Font size*/ 
+  color: #fff;  
+}
+
+.card__status {
+  font-size: .8em; /*Font size*/
+  color: #fff;
+}
+
+.card__description {
+  padding: 0 2em 2em;
+  margin: 0;
+  color: #fff;
+  font-family: helvetica bold, Helvetica, Arial; /*Helvetica font*/
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}    
+
+h3.card {
+	font-size: 50px; /*Font size*/
+	text-align: left; /*Text is on the left side*/
+	padding-left: 30px;
+	padding-top: 15px;
+	color: white;
+	font-family: helvetica bold, Helvetica, Arial; /*Helvetica font*/
+	font-weight: 450;
+}
+
+h5 {
+	font-size: 28px; /*Font size*/
+	text-align: left; /*Text is on the left side*/
+	color: white;
+	font-family: helvetica bold, Helvetica, Arial; /*Helvetica font*/
+	margin: 0;
+	padding: 0;
+	font-weight: 500;
+	bottom: 0;
+	top: 0;
+}
+
+ul.card {
+	font-size: 18px; /*Font size*/
+	text-align: left; /*Text is on the left side*/
+	padding-left: 30px;
+	padding-top: 15px;
+	color: white;
+	font-family: helvetica bold, Helvetica, Arial; /*Helvetica font*/
+	font-weight: 450;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	line-height: 2;
+}
+
+#copy {
+	bottom: 0px;
+	margin-left: 15%;
+}
+
+footer {
+	font-size: 18px; /*Font size*/
+	text-align: left; /*Text is on the left side*/
+	padding: 50px;
+	color: #444; /*Text color*/
+	font-family: helvetica bold, Helvetica, Arial; /*Helvetica font*/
+	font-weight: 400; /*Font weight*/
+
+
+}
+
+.footer {
+	text-align: left;
+	float: right;
+	padding-bottom: 50px;
+	padding-right: 30px;
+	margin-right: 15%;
+}
+
+.contact {
+	color: #444;
+	padding: 15px;
+}
+
+#newsletter {
+	background-color: #111;
+	border-radius: 5px;
+	border: 5px solid #e06100;
+	height: 60px;
+	width: 100%;
+	color: white;
+	font-size: 30px;
+	padding: 10px;
+}
+
+#newsletter:focus {
+    outline: none;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:active {
+	text-decoration: none;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 200; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#signin {
+	float: right;
+	padding-right: 15px;
+}
+
+.infos1 {
+	display: table;
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+h4.infoh {
+	color: white;
+	text-align: center;
+	font-family: helvetica bold, Helvetica, Arial; /*Helvetica font*/
+	font-weight: 600; /*Font weight*/
+	font-size: 3em;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+p.infoh {
+	color: white;
+	text-align: center;
+	font-family: helvetica bold, Helvetica, Arial; /*Helvetica font*/
+	font-weight: 400; /*Font weight*/
+	font-size: 2em;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.info1 {
+	width: 50%;
+	display: block;
+	float: left;
+}
+
+.info2 {
+	width: 50%;
+	display: block;
+	float: right;
+}
+
+.img1 {
+	width: 80%;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 60px;
+	margin: auto;
+	display: block;
+}
+
+.img2 {
+	width: 80%;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 60px;
+	margin: auto;
+	display: block;
+}
+
+.product {
+	background-color: #111;
+	border: 1px #111 solid;
+	border-radius: 10px;
+	float: left;
+	width: calc(30% - 1px);
+	padding: 15px;
+	margin-left: 15%;
+}
+
+.products {
+	text-decoration: none;
+	color: #444;
+	font-size: 1em;
+	display: block;
+	padding-top: 10px;
+}
+
+.fa-bars {
+	color: white;
+	vertical-align: middle;
+	margin-left: 1.5vw;
+}
+
+.fa-bars:hover {
+	color: #ccc;
+}
+
+.fa-bars:active {
+	color: #aaa;
+}
+
+.navbtn:hover {
+	color: #ccc;
+}
+
+.navbtn:active {
+	color: #aaa;
+}
+
+.navbtn2:hover {
+	color: #ccc;
+}
+
+.navbtn2:active {
+	color: #aaa;
+}
+
+.fa-apple, .fa-microsoft, .fa-linux {
+	color: white;
+	margin: auto;  /*Automatic spacing*/
+	display: flex;
+	flex: 33.33%;
+	justify-content: center;
+	flex-direction: row;
+	padding-left: 15px;
+}
+
+.comp {
+	width: 10%; /*Width is 10% of the browser window*/
+	display: flex; /*No idea what this does but it doens't work without it*/
+	padding: 5px; /*Gives the images some space*/
+	margin: auto;  /*Automatic spacing*/
+	flex: 33.33%; /*No idea what this does but it doens't work without it*/
+}
+
+#comp {
+	padding-top: 100px;
+	text-align: center;
+}
+
+@media (min-width:1439px) {
+	#leftwhy {
+		float: left;
+		margin-right: 5%;
+	}
+	
+	#rightwhy {
+		float: right;
+		margin-left: 5%;
+	}
+
+	.why {
+		background-color: #111;
+		border: 1px solid #111;
+		border-radius: 20px;
+		padding: 2%;
+		width: 33.3%;
+		display: block;
+	}
+
+	
+	.infos2 {
+		display: flex;
+		padding-left: 15%;
+		padding-right: 15%;
+	}
+}
+
+@media (max-width:1439px) {
+
+	#leftwhy {
+		float: left;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	
+	#midwhy {
+		float: left;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	
+	#rightwhy {
+		float: left;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.why {
+		background-color: #111;
+		border: 1px solid #111;
+		border-radius: 20px;
+		padding: 2%;
+		margin-top: 4%;
+		display: block;
+		width: 80%;
+	}
+
+	.infos2 {
+		display: table;
+		padding-left: 5%;
+		padding-right: 5%;
+		width: 90%;
+	}
+}
+
+h5.infoh {
+	color: white;
+	text-align: center;
+	font-family: helvetica bold, Helvetica, Arial; /*Helvetica font*/
+	font-weight: 600; /*Font weight*/
+	font-size: 2.5em;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+p.infoh2 {
+	color: white;
+	text-align: center;
+	font-family: helvetica bold, Helvetica, Arial; /*Helvetica font*/
+	font-weight: 400; /*Font weight*/
+	font-size: 1.5em;
+	padding-left: 30px;
+	padding-right: 30px;
+}
