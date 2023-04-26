@@ -7,16 +7,18 @@
     <title>Document</title>
 </head>
 <body>
+    <p id="demo"></p>
     <script>
         var car = {
-            'Make': "Mettell",
-            'Model': "Velora Coupe",
-            'BHP': 389,
+            'Make': "Porsche",
+            'Model': "959S",
+            'BHP': 444,
             'Engine': function () {
-                console.log("3.6L")
-                console.log("V10")
+                console.log("2.8L")
+                console.log("F6")
             }
         }
+        document.getElementById("demo").innerText = car;
     </script>
 </body>
 </html>
