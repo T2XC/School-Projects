@@ -8,15 +8,26 @@
 </head>
 <body>
     <script>
+
+        var words = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Curabitur malesuada quam dui, et suscipit justo fringilla posuere. In consectetur fringilla sagittis. Etiam pretium orci vitae imperdiet consequat. Donec urna mauris, porta eu odio non, viverra tincidunt nulla. Donec sed laoreet mi. Nunc finibus sagittis quam, vitae volutpat libero bibendum nec. Aliquam erat volutpat.".split(" ")
+
         var names = ["Doog", "Boog", "Log", "Mafia"]
 
         function toEmailAddress(name) {
             return name.toLowerCase() + "@gmail.com"
         }
 
-        for(var i = 0; i < names.length; i++) {
-            var currentName = toEmailAddress(names[i])
-            console.log(currentName)
+        for(var i = 0; i < words.length; i++) {
+            var currentEmail = toEmailAddress(words[i])
+            
+            // if(i==10) {
+            //    break;
+            // }
+
+            if(i % 2 == 0) {
+                continue;
+            }
+            console.log(i, currentEmail)
         }
     </script>
 </body>
