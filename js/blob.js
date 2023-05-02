@@ -17,7 +17,7 @@ function drawGame() {
   inputs();
   boundryCheck();
   drawGreenBlob();
-  // element.scrollIntoViewIfNeeded();
+  element.scrollIntoViewIfNeeded();
 }
 
 function boundryCheck() {

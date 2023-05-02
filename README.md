@@ -57,3 +57,5 @@ Type in your birthday and it will tell you what season it is in.
 ### superhero.html
 
 My first website ever.
+
+[UPDATED FOR 2.6]
