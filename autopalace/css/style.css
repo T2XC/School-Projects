@@ -1,0 +1,86 @@
+/*  UAS Override*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: DM Sans, Helvetica Neue, Helvetica, Verdana, Arial, sans-serif;
+}
+
+/* Colors */
+
+.red {
+    color: #FB3640;
+}
+
+.bg-red {
+    background-color: #FB3640;
+}
+
+.grey {
+    color: #605F5E;
+}
+
+.bg-grey {
+    background-color: #605F5E;
+}
+
+.blue1 {
+    color: #1D3461;
+}
+
+.bg-blue1 {
+    background-color: #1D3461;
+}
+
+.blue2 {
+    color: #1F487E;
+}
+
+.bg-blue2 {
+    background-color: #1F487E;
+}
+
+.blue3 {
+    color: #247BA0;
+}
+
+.bg-blue3 {
+    background-color: #247BA0;
+}
+
+.black {
+    color: #14141d;
+}
+
+.bg-black {
+    background-color: #14141d;
+}
+
+.white {
+    color: #f1f1fe;
+}
+
+.bg-white {
+    background-color: #f1f1fe;
+}
+
+/* CSS */
+
+.navbar {
+    padding: 10px;
+    display: flex;
+    flex: 1;
+}
+
+.nav-link {
+    margin-left: 15px;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.nav-login {
+    margin-right: 15px;
+    float: right;
+    right: 0;
+}
