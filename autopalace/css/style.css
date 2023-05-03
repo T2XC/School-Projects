@@ -65,10 +65,12 @@
     background-color: #f1f1fe;
 }
 
-/* CSS */
+/* --------------- CSS --------------- */
+
+/* Navbar */
 
 .navbar {
-    padding: 10px;
+    padding: 15px;
     display: flex;
     flex: 1;
 }
@@ -83,4 +85,71 @@
     margin-right: 15px;
     float: right;
     right: 0;
+    border: 1px solid #1F487E;
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 5px;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    width: 100vw;
+    padding: 10%;
+}
+
+.h-titles {
+    float: left;
+    left: 0;
+    margin: 10%;
+    text-align: center;
+}
+
+.h-title {
+    font-size: 64px;
+}
+
+.h-subtitle {
+    font-size: 32px;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #247BA0;
+    border-radius: 20px;
+}
+
+.s-input {
+    margin: 15px;
+    border: 2px solid #f1f1fe;
+}
+
+.s-input:hover {
+    border: 2px solid #1F487E;
+}
+
+.s-submit {
+    border: 2px solid #247BA0;
+    height: 40px;
+    font-size: 24px;
+}
+
+.s-submit:hover {
+    border: 2px solid #1F487E;
+    height: 40px;
+    font-size: 24px;
+}
+
+.s-label {
+    font-size: 18px;
+    text-align: center;
+}
+
+.s-check {
+    margin: 15px;
 }
