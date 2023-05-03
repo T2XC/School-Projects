@@ -7,12 +7,24 @@
     <title>Document</title>
 </head>
 <body>
+    <h1 id="p1" class="p"></h1>
+    <h1 id="p2" class="p"></h1>
+    <h1 id="p3" class="p"></h1>
+    <h1 id="p4" class="p"></h1>
     <script>
-            var num1 = prompt(`Numero?`);
-            var num2 = prompt(`Plus?`);
-            var num3 = prompt(`Kertaa?`);
-            var num4 = Number(num1) + Number(num2) * Number(num3);
-            alert(`Sinun tuloksesi on ${num4}`)
+            var num1 = prompt(`Ensimmäinen numero?`);
+            var num2 = prompt(`${num1} ja toinen numero?`);
+            var textcolor = prompt(`${num1} ja ${num2}: Tekstin väri?`);
+
+            document.getElementById("p1").style.color = textcolor;
+            document.getElementById("p2").style.color = textcolor;
+            document.getElementById("p3").style.color = textcolor;
+            document.getElementById("p4").style.color = textcolor;
+
+            var plus = document.getElementById("p1").innerText = `Numero A plus numero B: ${(Number(num1) + Number(num2))}`;
+            var minus = document.getElementById("p2").innerText = `Numero A miinus numero B: ${(Number(num1) - Number(num2))}`;
+            var times = document.getElementById("p3").innerText = `Numero A kertaa numero B: ${(Number(num1) * Number(num2))}`;
+            var divide = document.getElementById("p4").innerText = `Numero A jaettuna numero B: ${(Number(num1) / Number(num2))}`;
     </script>
 </body>
 </html>
