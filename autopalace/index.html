@@ -31,7 +31,7 @@
         </div>
 
         <div class="search bg-blue3 white">
-            <label for="make" class="s-label">Make</label>
+            <label for="make" class="s-label white">Make</label>
             <input type="text" name="make" id="s-make" placeholder="Audi, BMW, Cadillac..." class="s-input bg-white black" list="makelist">
                 <datalist id="makelist">
                     <option>Any Make</option>
@@ -227,11 +227,14 @@
                         <option>Zenvo</option>
 
                     </datalist>
-            <label for="model" class="s-label">Model</label>
+            <label for="model" class="s-label white">Model</label>
             <input type="text" name="model" id="s-model" placeholder="A4, Beetle, Corolla..." class="s-input bg-white black">
-            <label for="year" class="s-label">Model Year</label>
-            <input type="number" name="year" id="s-year" placeholder="1900-2024" class="s-input bg-white black">
-            <label for="body" class="s-label">Body Type</label>
+            <label for="year" class="s-label white">Model Year</label>
+            <div class="s-years">
+                <input type="number" name="year" id="s-minyear" placeholder="Min" class="s-input bg-white black" min="1899" max="2024">
+                <input type="number" name="year" id="s-maxyear" placeholder="Max" class="s-input bg-white black" min="1899" max="2024">
+            </div>
+            <label for="body" class="s-label white">Body Type</label>
             <select name="body" id="s-body" class="s-input bg-white black">
                 <option>Any</option>
                 <option>Cabriolet</option>
@@ -253,7 +256,7 @@
                 <option>Van</option>
                 <option>Wagon</option>
             </select>
-            <label for="country" class="s-label">Country</label>
+            <label for="country" class="s-label white">Country</label>
             <select name="country" id="s-country" class="s-input bg-white black">
                 <option>Any Country</option>
                 <option disabled>Nearest to you:</option>
@@ -273,14 +276,32 @@
                 <option>United Kingdom</option>
                 <option>USA</option>
             </select>
-            <label for="new" class="s-label">New</label>
-            <input type="checkbox" name="new" id="s-new" class="s-check">
-            <label for="used" class="s-label">Used</label>
-            <input type="checkbox" name="used" id="s-used" class="s-check">
-            <input type="submit" value="Search" class="s-submit bg-blue3 white">
+            <div class="s-checks">
+                <label for="new" class="s-label white">New</label>
+                <input type="checkbox" name="new" id="s-new" class="s-check">
+                <label for="used" class="s-label white">Used</label>
+                <input type="checkbox" name="used" id="s-used" class="s-check">
+            </div>
+            <input type="submit" value="Search" id="s-submit" class="s-submit bg-blue3 white">
         </div>
 
     </header>
+
+    <div class="featured bg-blue3">
+        <h2>Featured Cars</h2>
+        <div class="feat white">
+            <img src="img/countach/01.jpg" alt="countach" class="feat-pic">
+        </div>
+        <div class="feat white">
+            <img src="img/mondial/01.jpeg" alt="mondial" class="feat-pic">
+        </div>
+        <div class="feat white">
+            <img src="img/300d/01.jpeg" alt="300d" class="feat-pic">
+        </div>
+        <div class="feat white">
+            <img src="img/elise/01.jpeg" alt="elise" class="feat-pic">
+        </div>
+    </div>
     
     <footer class="footer bg-red white">
 
@@ -293,5 +314,8 @@
         </div>
 
     </footer>
+
+    <script src="js/script.js"></script>
+
 </body>
 </html>

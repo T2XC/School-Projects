@@ -64,7 +64,6 @@
 .bg-white {
     background-color: #f1f1fe;
 }
-
 /* --------------- CSS --------------- */
 
 /* Navbar */
@@ -73,6 +72,7 @@
     padding: 15px;
     display: flex;
     flex: 1;
+    height: 6vh;
 }
 
 .nav-link {
@@ -96,14 +96,25 @@
 .header {
     display: flex;
     width: 100vw;
-    padding: 10%;
+    padding: 6%;
+    height: 94vh;
 }
 
 .h-titles {
+    background-color: #555;
+    background-blend-mode: multiply;
+    background-image: url('img/header.png');
+    background-repeat: no-repeat;
+    background-attachment: static;
+    background-position: center;
+    background-size: 120% auto;
     float: left;
     left: 0;
-    margin: 10%;
+    width: 69%;
+    height: 100%;
+    padding: 10%;
     text-align: center;
+    border-radius: 20px;
 }
 
 .h-title {
@@ -113,6 +124,8 @@
 .h-subtitle {
     font-size: 32px;
 }
+
+/* Search */
 
 .search {
     display: flex;
@@ -127,6 +140,9 @@
 .s-input {
     margin: 15px;
     border: 2px solid #f1f1fe;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 .s-input:hover {
@@ -147,9 +163,44 @@
 
 .s-label {
     font-size: 18px;
-    text-align: center;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.s-years {
+    display: inline;
+    width: 100%;
+}
+
+#minyear, #maxyear {
+    width: 43.35%; 
+}
+
+.s-checks {
+    display: inline;
 }
 
 .s-check {
     margin: 15px;
+    margin-right: auto;
+}
+
+/* Featured */
+
+.featured {
+	width: 100vw;
+	margin-left: auto;
+	margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.feat  {
+	width: 25%;
+}
+
+.feat-pic {
+    width: 100%;
+    padding: 2%;
 }
