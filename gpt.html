@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Programming Languages</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .loader-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      z-index: 9999;
+      opacity: 1;
+      transition: opacity 0.5s ease;
+    }
+    
+    .loader {
+      border: 8px solid rgba(0, 0, 0, 0.2);
+      border-top: 8px solid #3498db;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      animation: loaderRotate 1s linear infinite;
+    }
+    
+    @keyframes loaderRotate {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      opacity: 0;
+      animation: fadeIn 0.5s forwards;
+    }
+    
+    h1 {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 48px;
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .language {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 20px;
+      background-color: #f0f0f0;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+    
+    .language:hover {
+      background-color: #e0e0e0;
+    }
+    
+    .language img {
+      width: auto;
+      height: 50px;
+      padding: 5px;
+      margin-right: 20px;
+      object-fit: contain;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+    
+    .language h2 {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #333;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .language p {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 16px;
+      color: #555;
+      margin-top: 5px;
+    }
+    
+    .language-details {
+      display: none;
+      padding-top: 20px;
+      animation: fadeIn 0.5s;
+    }
+    
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    
+    .language-details p {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 14px;
+      color: #777;
+      line-height: 1.5;
+      margin-top: 10px;
+    }
+    
+    .language.opened {
+      height: auto;
+    }
+    
+    .language.opened .language-details {
+      display: block;
+    }
+    
+    .language.opened .language-short-description {
+      display: none;
+    }
+    
+    .language-details {
+      margin-top: 10px;
+    }
+    
+    .language:last-child {
+      margin-bottom: 0;
+    }
+    
+    .language:last-child .language-details {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="loader-container">
+    <div class="loader"></div>
+  </div>
+  
+  <div class="container">
+    <h1>Popular Programming Languages</h1>
+    <div class="language" onclick="toggleDetails(event)">
+      <img src="img/html.png" alt="HTML">
+      <div>
+        <h2>HTML</h2>
+        <p class="language-short-description">A markup language for creating web pages.</p>
+        <div class="language-details" id="language-details-1">
+          <p>HTML (Hypertext Markup Language) is a markup language used for creating the structure and content of web pages. It uses tags to define various elements such as headings, paragraphs, links, images, and more. HTML provides the foundation for creating and organizing the content on the World Wide Web.</p>
+          <p>HTML is a key component of web development and is typically used alongside CSS (Cascading Style Sheets) and JavaScript to create interactive and visually appealing websites.</p>
+        </div>
+      </div>
+    </div>
+    <div class="language" onclick="toggleDetails(event)">
+      <img src="img/css.png" alt="CSS">
+      <div>
+        <h2>CSS</h2>
+        <p class="language-short-description">A style sheet language used for describing the presentation of a document written in HTML.</p>
+        <div class="language-details" id="language-details-2">
+          <p>CSS (Cascading Style Sheets) is a style sheet language used for describing the presentation of a document written in HTML. It provides a way to control the layout, formatting, and appearance of web pages. With CSS, you can specify various styles such as colors, fonts, margins, borders, and more.</p>
+          <p>CSS allows web developers to separate the design and layout of a web page from its content. By applying CSS rules, you can achieve consistent styling across multiple pages and easily update the appearance of a website.</p>
+        </div>
+      </div>
+    </div>
+    <div class="language" onclick="toggleDetails(event)">
+      <img src="img/js.png" alt="JavaScript">
+      <div>
+        <h2>JavaScript</h2>
+        <p class="language-short-description">A programming language that enables interactive web pages and web applications.</p>
+        <div class="language-details" id="language-details-3">
+          <p>JavaScript is a high-level programming language that enables interactive web pages and web applications. It provides the ability to add dynamic behavior and interactivity to websites. With JavaScript, you can manipulate web page elements, handle events, perform calculations, make HTTP requests, and much more.</p>
+          <p>JavaScript is widely used in web development and is supported by all modern web browsers. It plays a crucial role in creating responsive and engaging user interfaces.</p>
+        </div>
+      </div>
+    </div>
+    <div class="language" onclick="toggleDetails(event)">
+      <img src="img/pyt.png" alt="Python">
+      <div>
+        <h2>Python</h2>
+        <p class="language-short-description">A high-level programming language known for its simplicity and readability.</p>
+        <div class="language-details" id="language-details-4">
+          <p>Python is a high-level programming language known for its simplicity and readability. It provides a clean and straightforward syntax, making it easy to learn and understand. Python emphasizes code readability and encourages developers to write clean and maintainable code.</p>
+          <p>Python is widely used in various domains such as web development, data analysis, artificial intelligence, machine learning, and more. Its extensive standard library and third-party packages make it a versatile language for different applications.</p>
+        </div>
+      </div>
+    </div>
+    <div class="language" onclick="toggleDetails(event)">
+      <img src="img/sql.png" alt="SQL">
+      <div>
+        <h2>SQL</h2>
+        <p class="language-short-description">A programming language used for managing and manipulating relational databases.</p>
+        <div class="language-details" id="language-details-5">
+          <p>SQL (Structured Query Language) is a programming language used for managing and manipulating relational databases. It provides a standardized way to interact with databases, allowing you to create, modify, and query the data stored in them.</p>
+          <p>SQL is essential for working with databases and is widely used in backend development and data analysis. It offers powerful features for data retrieval, filtering, sorting, and performing various operations on large datasets.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    window.addEventListener('load', function() {
+      var loaderContainer = document.querySelector('.loader-container');
+      var container = document.querySelector('.container');
+      
+      setTimeout(function() {
+        loaderContainer.style.opacity = '0';
+        setTimeout(function() {
+          loaderContainer.style.display = 'none';
+          container.style.opacity = '1';
+        }, 500);
+      }, 1000);
+    });
+    
+    function toggleDetails(event) {
+      var language = event.currentTarget;
+      language.classList.toggle('opened');
+    }
+  </script>
+</body>
+</html>
