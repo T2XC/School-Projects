@@ -1,3 +1,5 @@
+![T2XC.github.io (Image)](/img/t2xcgithubio.png)
+
 # t2xc.github.io
 
 My main page
@@ -44,7 +46,7 @@ A clicker with a secret.
 
 ### modal.html
 
-A modal made with HTML, CSS £ JS.
+A modal made with HTML, CSS & JS.
 
 ### profile.html
 

@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F7F7F9;
+}
+
+nav {
+    background-color: #7D8491;
+    padding: 1em;
+}
+
+.nav-link {
+    margin-left: 2em;
+}
+
+header {
+    background-color: #F7F7F9;
+}
+
+footer {
+    background-color: #24272B;
+}
+
+h1 {
+    color: #07070A;
+    text-decoration: none;
+}
+
+h2 {
+    color: #07070A;
+    text-decoration: none;
+}
+
+a {
+    color: #F7F7F9;
+    text-decoration: none;
+}

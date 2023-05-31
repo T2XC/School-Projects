@@ -6,16 +6,16 @@ function yearCheck() {
     this.maxYear = Number(maxYear);
 
     if (minYear < 1899) {
-        alert("Minimum year too small!");
+        alert("Minimum year too low!");
         document.querySelector("#s-minyear").value = 1899;
     } else if (maxYear < 1899) {
-        alert("Maximum year too small!");
+        alert("Maximum year too low!");
         document.querySelector("#s-maxyear").value = 1899;
     } else if (minYear > 2024) {
-        alert("Minimum year too large!");
+        alert("Minimum year too high!");
         document.querySelector("#s-minyear").value = 2024;
     } else if (maxYear > 2024) {
-        alert("Maximum year too large!");
+        alert("Maximum year too high!");
         document.querySelector("#s-maxyear").value = 2024;
     } else if (minYear > maxYear) {
         alert("Minimum year is higher than maximum year!");
