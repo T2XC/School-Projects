@@ -59,26 +59,3 @@ Type in your birthday and it will tell you what season it is in.
 ### superhero.html
 
 My first website in 2022.
-
-[UPDATED FOR 2.6]
-
-1. Gold
-2. Silver
-3. Bronze
-
-- One
-- Two
-- Three
-
-1. Look
-2. At
-    - This
-    - Thing
-3. I
-4. Made
-
-        <html>
-            <body>
-                <p>Good</p>
-            </body>
-        </html>
