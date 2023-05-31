@@ -1,4 +1,4 @@
-![T2XC.github.io (Image)](/img/t2xcgithubio.png)
+![T2XC.github.io (Image)](/img/T2XCgithubio.png)
 
 # t2xc.github.io
 
