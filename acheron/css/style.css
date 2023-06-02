@@ -21,7 +21,7 @@ body {
 	padding: none; /*No padding*/
 }
 
-@media(min-width: 960px) {
+@media(min-width: 768px) {
     #titletop {
 		display: none;
 	}
@@ -37,7 +37,7 @@ body {
 	z-index: 100;
 }
 
-@media (max-width:960px) {
+@media (max-width:768px) {
 	.navbtn {
 		display: none;
 	}
@@ -45,6 +45,15 @@ body {
 	.navbtn2 {
 		display: none;
 	}
+
+	.navmenu {
+		margin-top: 18px;
+	}
+
+	#titletop {
+		margin-left: 15px;
+	}
+	
 }
 
 .navbtn {
@@ -111,7 +120,7 @@ h3.subtitles {
 	background-color: rgba(0,0,0,.8); /*Get Started button is a transparent black*/
 	color: white;	/*Text is white*/
 	border: 0; /*No border*/
-	width: 15%; /*Button width is 15% of the page's width*/
+	width: clamp(100px, 100%, 250px);
 	height: 50px; /*Height is 50 pixels*/
 	text-align: center; /*Text aligns to the center of the button*/
 	margin: auto; /*Something that helps the button work*/
