@@ -1,0 +1,86 @@
+/* CSS */
+
+/* Entire site */
+
+* {
+    margin: 0; /* Resets margin */
+    padding: 0; /* Resets padding */
+    box-sizing: border-box; /* Includes padding and border in content width and height */
+    font-family: Helvetica, sans-serif;
+}
+
+/* Site body */
+
+body {
+    background-color: #F5FBEF; /* Site background color */
+    color: #02040F; /* Site font color */
+}
+
+/* Navigation bar */
+
+nav {
+    display: inline;
+    
+    background-color: #f1f1f1; /* Background color */
+
+    padding: 10px; /* Content is 15 pixels away from the edge of the navigation bar */
+    position: fixed;
+    width: 100vw;
+}
+
+.nav-btn {
+    background-color: #ececec; /* Background color */
+    color: #02040F; /* Font color */
+
+    margin-left: 7.5%; /* Button is 15 pixels away from the button on the left */
+    padding: 5px 15px 5px;
+    border-radius: 10px;
+    text-decoration:  none; /* Removes underline from link */
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.nav-btn:hover {
+    background-color: #e4e4e4; /* Background color */
+    transition: 0.2s;
+}
+
+.nav-title {
+    background-color: #f1f1f1; /* Background color */
+
+    margin-left: 0px; /* Resets earlier margin, button is now 0 pixels away from the edge of the navigation bar */
+    padding: 0px 5px 0px;
+    font-size: 28px;
+}
+
+.nav-next-btn {
+    background-color: #00FF37; /* Background color */
+    color: #f1f1f1; /* Font color */
+
+    float: right;
+    margin-right: 2.5%;
+}
+
+.nav-next-btn:hover {
+    background-color: #00c72b; /* Background color */
+    transition: 0.2s;
+}
+
+/* Header */
+
+header {
+    display: flex; /* Advanced content display */
+    flex-direction: column; /* Content is a column */
+    align-items: center; /* Content is in the middle of the header */
+
+    background-color: #F5FBEF; /* Background color */
+
+    padding-top: 20%;
+    height: 100vh;
+}
+
+/* Footer */
+
+footer {
+    background-color: #EDEDED; /* Background color */
+}
