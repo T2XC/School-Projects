@@ -12,7 +12,7 @@
 /* Site body */
 
 body {
-    background-color: #F5FBEF; /* Site background color */
+    background-color: #f1f1f5; /* Site background color */
     color: #02040F; /* Site font color */
 }
 
@@ -21,7 +21,7 @@ body {
 nav {
     display: inline;
     
-    background-color: #f1f1f1; /* Background color */
+    background-color: #e6e6e9; /* Background color */
 
     padding: 10px; /* Content is 15 pixels away from the edge of the navigation bar */
     position: fixed;
@@ -29,10 +29,10 @@ nav {
 }
 
 .nav-btn {
-    background-color: #ececec; /* Background color */
+    background-color: #e2e2e4; /* Background color */
     color: #02040F; /* Font color */
 
-    margin-left: 7.5%; /* Button is 15 pixels away from the button on the left */
+    margin-left: 3.34%; /* Button is 15 pixels away from the button on the left */
     padding: 5px 15px 5px;
     border-radius: 10px;
     text-decoration:  none; /* Removes underline from link */
@@ -46,7 +46,7 @@ nav {
 }
 
 .nav-title {
-    background-color: #f1f1f1; /* Background color */
+    background-color: #e6e6e9; /* Background color */
 
     margin-left: 0px; /* Resets earlier margin, button is now 0 pixels away from the edge of the navigation bar */
     padding: 0px 5px 0px;
@@ -54,7 +54,7 @@ nav {
 }
 
 .nav-next-btn {
-    background-color: #00FF37; /* Background color */
+    background-color: #00d82f; /* Background color */
     color: #f1f1f1; /* Font color */
 
     float: right;
@@ -62,7 +62,7 @@ nav {
 }
 
 .nav-next-btn:hover {
-    background-color: #00c72b; /* Background color */
+    background-color: #008a1e; /* Background color */
     transition: 0.2s;
 }
 
@@ -73,10 +73,50 @@ header {
     flex-direction: column; /* Content is a column */
     align-items: center; /* Content is in the middle of the header */
 
-    background-color: #F5FBEF; /* Background color */
+    background-color: #f1f1f5; /* Background color */
 
     padding-top: 20%;
     height: 100vh;
+}
+
+.title-subtitle {
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+.title-next-btn {
+    background-color: #00d82f; /* Background color */
+    color: #f1f1f1; /* Font color */
+
+    margin-top: 50px;
+    padding: 10px 25px 10px;
+    text-decoration:  none; /* Removes underline from link */
+    font-size: 24px;
+    transition: 0.2s;
+    border-radius: 10px;
+}
+
+.title-next-btn:hover {
+    background-color: #008a1e; /* Background color */
+    transition: 0.2s;
+}
+
+/* Information */
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 80vw;
+}
+
+.info-box {
+    display: blocK;
+    width: 50%;
+}
+
+.info-img {
+    width: 50%;
 }
 
 /* Footer */
