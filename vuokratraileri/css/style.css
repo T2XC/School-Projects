@@ -38,6 +38,7 @@ nav {
     text-decoration:  none; /* Removes underline from link */
     font-size: 18px;
     transition: 0.2s;
+    border: 0px;
 }
 
 .nav-btn:hover {
@@ -94,6 +95,7 @@ header {
     font-size: 24px;
     transition: 0.2s;
     border-radius: 10px;
+    border: 0px;
 }
 
 .title-next-btn:hover {
