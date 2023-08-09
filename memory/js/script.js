@@ -3,6 +3,7 @@ const SquareNum = 16;
 let i = 0;
 let square1, square2;
 let clickCount = 0;
+let score = 0;
 
 document.querySelector("#score").style.visbility = "hidden";
 const playAgainBtn = document.querySelector('button');
@@ -10,22 +11,22 @@ playAgainBtn.style.visibility = "hidden";
 playAgainBtn.addEventListener('click', playAgain)
 
 let colors = [
-    "#33ff33",
-    "#33ff33",
-    "#ff944d",
-    "#ff944d",
-    "#80ccff",
-    "#80ccff",
-    "#ffff66",
-    "#ffff66",
-    "#ff4dff",
-    "#ff4dff",
-    "#ff1a1a",
-    "#ff1a1a",
-    "#dddddd",
-    "#dddddd",
-    "#000099",
-    "#000099",
+    "<img src='js/img/ip.jpg'>",
+    "<img src='js/img/ip.jpg'>",
+    "<img src='js/img/ipr.jpg'>",
+    "<img src='js/img/ipr.jpg'>",
+    "<img src='js/img/mb.jpg'>",
+    "<img src='js/img/mb.jpg'>",
+    "<img src='js/img/mp.jpg'>",
+    "<img src='js/img/mp.jpg'>",
+    "<img src='js/img/hp.png'>",
+    "<img src='js/img/hp.png'>",
+    "<img src='js/img/ap.webp'>",
+    "<img src='js/img/ap.webp'>",
+    "<img src='js/img/apm.webp'>",
+    "<img src='js/img/apm.webp'>",
+    "<img src='js/img/ms.webp'>",
+    "<img src='js/img/ms.webp'>",
 ];
 
 function selectColor() {
@@ -55,9 +56,9 @@ function squareClicked() {
     if (clickCount > 2) return;
     clickCount === 1 ? (square1 = this) : (square2 = this);
     if(clickCount === 1) {
-        square1.style.background = square1.getAttribute("data-color");
+        square1.innerHTML = square1.getAttribute("data-color");
     } else {
-        square2.style.background = square2.getAttribute("data-color");
+        square2.innerHTML = square2.getAttribute("data-color");
         checkMatch();
     }
 }
@@ -73,15 +74,13 @@ function checkMatch() {
 }
 
 function noMatch() {
-    square1.style.borderWidth = "1px";
-    square2.style.borderWidth = "1px";
-    square1.style.border = "solid #cc0000";
-    square2.style.border = "solid #cc0000";
+    square1.style.border = "1px solid #cc0000";
+    square2.style.border = "1px solid #cc0000";
     setTimeout(function () {
-        square1.style.borderWidth = "0px";
-        square2.style.borderWidth = "0px";
-        square1.style.background = "";
-        square2.style.background = "";
+        square1.style.border = "2px solid rgba(0, 0, 0, 0)";
+        square2.style.border = "2px solid rgba(0, 0, 0, 0)";
+        square1.innerHTML = "";
+        square2.innerHTML = "";
         square1 = "";
         square2 = "";
     }, 500);
@@ -95,11 +94,12 @@ function isMatch() {
     document.querySelector("#score").style.visibility = "visible";
     square1.style.border = "solid #00cc00";
     square2.style.border = "solid #00cc00";
-    square1.style.borderWidth = "2px";
-    square2.style.borderWidth = "2px";
+    square1.style.borderWidth = "1px";
+    square2.style.borderWidth = "1px";
     square1.removeEventListener("click", squareClicked)
     square2.removeEventListener("click", squareClicked)
     clickCount = 0;
+    checkGameEnded();
     console.log("yes");
 }
 
@@ -110,7 +110,6 @@ function checkGameEnded() {
         playAgainBtn.style.visibility = "visible"
     }
 }
-
 
 function playAgain() {
     window.location.reload()

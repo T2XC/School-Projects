@@ -46,8 +46,14 @@ ul {
 
 li {
     list-style: none;
-    border: none;
+    border: 2px solid rgba(0, 0, 0, 0);
     background-color: rgba(0, 0, 0, 0.334);
     border-radius: 10px;
     cursor: pointer;
+}
+
+img {
+    width: 96px;
+    height: 96px;
+    border-radius: 7px;
 }
