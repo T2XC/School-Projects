@@ -45,11 +45,44 @@ for(const square of squares) {
 }
 
 function squareClicked() {
+    if (square1 == this) return;
     clickCount++;
+    if (clickCount > 2) return;
     clickCount === 1 ? (square1 = this) : (square2 = this);
     if(clickCount === 1) {
         square1.style.background = square1.getAttribute("data-color");
     } else {
         square2.style.background = square2.getAttribute("data-color");
+        checkMatch();
     }
+}
+
+function checkMatch() {
+    let match =
+        square1.getAttribute("data-color") === square2.getAttribute("data-color")
+    if (!match) {
+        setTimeout(function () {
+            noMatch();
+        }, 500);
+    } else {
+        isMatch();
+    }
+}
+
+function noMatch() {
+    square1.style.background = "";
+    square2.style.background = "";
+    square1 = "";
+    square2 = "";
+    clickCount = 0;
+    console.log("NO");
+}
+
+function isMatch() {
+    square1.style.border = "1px green";
+    square2.style.border = "1px green";
+    square1.removeEventListener("click", squareClicked)
+    square2.removeEventListener("click", squareClicked)
+    clickCount = 0;
+    console.log("yes");
 }
