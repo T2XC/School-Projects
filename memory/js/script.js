@@ -1,5 +1,7 @@
 const squaresContainer = document.querySelector('#squares');
+const winnersContainer = document.querySelector('#winners');
 const SquareNum = 16;
+const winnerNum = 16;
 let i = 0;
 let square1, square2;
 let clickCount = 0;
@@ -27,6 +29,14 @@ let colors = [
     "<img src='js/img/apm.webp'>",
     "<img src='js/img/ms.webp'>",
     "<img src='js/img/ms.webp'>",
+];
+
+let winners = [
+    "Johnny just won an iPhone 14!",
+    "Steve just won an iMac!",
+    "Craig just won an AirPods Max!",
+    "Susan just won a Mac Pro!",
+    "Tim just won a AirPods 3!",
 ];
 
 function selectColor() {
@@ -113,4 +123,20 @@ function checkGameEnded() {
 
 function playAgain() {
     window.location.reload()
+}
+
+function selectWinners() {
+    const random = Math.floor(Math.random() * winners.length)
+    const selected = winners[random]
+    winners.splice(random, 1)
+    return selected;
+}
+
+while(i < WinnerNum) {
+    const win = document.createElement('li');
+    const winner = selectWinners();
+    wins.innerText("#winners",winner);
+    winnersContainer.appendChild(win);
+
+    i++;
 }

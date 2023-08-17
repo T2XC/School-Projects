@@ -2,40 +2,170 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
+    font-family: 'Helvetica Neue', 'Helvetica', Ubuntu, -apple-system, sans-serif;
 }
 
 body {
     background-color: #F7F7F9;
 }
 
-nav {
-    background-color: #7D8491;
-    padding: 1em;
-}
-
-.nav-link {
-    margin-left: 2em;
-}
-
-header {
-    background-color: #F7F7F9;
-}
-
-footer {
-    background-color: #24272B;
-}
-
-h1 {
-    color: #07070A;
-    text-decoration: none;
-}
-
-h2 {
-    color: #07070A;
-    text-decoration: none;
-}
-
 a {
     color: #F7F7F9;
     text-decoration: none;
+}
+
+nav {
+    background: #F7F7F9;
+
+    height: 5vh;
+}
+
+.nav-link {
+    display: inline-block;
+    background-color: #F7F7F9;
+    color: #24272B;
+
+    height: 2.5vh;
+    margin: 1vh;
+    padding: 0.75vh;
+    border-radius: 0.5vh;
+    vertical-align: middle;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+    padding: 18%;
+}
+
+header {
+    background: linear-gradient(212deg, #e700ff, #00dbff);
+    background-size: 400% 400%;
+    -webkit-animation: headerAnim 47s ease infinite;
+    -moz-animation: headerAnim 47s ease infinite;
+    -o-animation: headerAnim 47s ease infinite;
+    animation: headerAnim 47s ease infinite;
+}
+@-webkit-keyframes headerAnim {
+    0%{background-position:0% 74%}
+    50%{background-position:100% 27%}
+    100%{background-position:0% 74%}
+}
+@-moz-keyframes headerAnim {
+    0%{background-position:0% 74%}
+    50%{background-position:100% 27%}
+    100%{background-position:0% 74%}
+}
+@-o-keyframes headerAnim {
+    0%{background-position:0% 74%}
+    50%{background-position:100% 27%}
+    100%{background-position:0% 74%}
+}
+@keyframes headerAnim {
+    0%{background-position:0% 74%}
+    50%{background-position:100% 27%}
+    100%{background-position:0% 74%}
+}
+
+.box {
+    height: 45vh;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    padding: 5vh;
+    font-size: 48px;
+    color: #F7F7F9;
+    border-radius: 2.5vw;
+}
+
+.box {
+    background: linear-gradient(212deg, #e700ff, #00dbff);
+    background-size: 400% 400%;
+    -webkit-animation: boxAnim 47s ease infinite;
+    -moz-animation: boxAnim 47s ease infinite;
+    -o-animation: boxAnim 47s ease infinite;
+    animation: boxAnim 47s ease infinite;
+}
+@-webkit-keyframes boxAnim {
+    0%{background-position:0% 74%}
+    50%{background-position:100% 27%}
+    100%{background-position:0% 74%}
+}
+@-moz-keyframes boxAnim {
+    0%{background-position:0% 74%}
+    50%{background-position:100% 27%}
+    100%{background-position:0% 74%}
+}
+@-o-keyframes boxAnim {
+    0%{background-position:0% 74%}
+    50%{background-position:100% 27%}
+    100%{background-position:0% 74%}
+}
+@keyframes boxAnim {
+    0%{background-position:0% 74%}
+    50%{background-position:100% 27%}
+    100%{background-position:0% 74%}
+}
+
+footer {
+    background: #555;
+
+    height: 3vh;
+}
+
+.contactbtn {
+    background-color: #878b92;
+
+    height: 1vh;
+    padding: 0.5vh;
+    margin: 0.5vh;
+    border-radius: 0.5vh;
+}
+
+@media(min-width: 768px) {
+    h1 {
+        color: #F7F7F9;
+    
+        font-size: 5vw;
+        text-decoration: none;
+    
+        width: 100%;
+        height: 50%;
+        text-align: center;
+    }
+
+    h2 {
+        color: #F7F7F9;
+    
+        font-size: 2vw;
+        text-decoration: none;
+    
+        width: 100%;
+        height: 50%;
+        text-align: center;
+    }
+}
+
+@media(max-width: 768px) {
+    h1 {
+        font-size: 10vw;
+        
+        width: 100%;
+        height: 80%;
+        text-align: center;
+    }
+
+    h2 {
+        color: #07070A;
+    
+        font-size: 3vw;
+        text-decoration: none;
+    
+        width: 100%;
+        height: 2   0%;
+        text-align: center;
+    }
 }
