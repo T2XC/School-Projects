@@ -5,19 +5,9 @@
     font-family: Raleway, Roboto, sans-serif;
 }
 
-body {
-    background-color: black;
-}
-
 nav {
     height: 80px;
     width: 100vw;
-
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-
-    background-color: black;
 }
 
 .nav {
@@ -37,7 +27,7 @@ nav {
     font-size: 20px;
     text-decoration: none;
 
-    color: white;
+    color: black;
 }
 
 .navbtn {
@@ -48,44 +38,20 @@ nav {
     font-size: 20px;
     text-decoration: none;
 
-    color: white;
-    border: 2px solid black;
+    color: black;
+    border: 2px solid white;
     border-radius: 10px;
 
     transition: 0.25s;
 }
 
 .navbtn:hover {
-    border: 2px solid white;
+    border: 2px solid black;
 
     transition: 0.5s;
 }
 
-header {
-    height: 50vw;
-
-    margin: 80px 40px 0px 40px;
-    
-    background-image: url("../img/textlogo.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-color: black;
-}
-
-h1 {
-    padding-top: 35vw;
+p {
     text-align: center;
-
-    font-size: 48px;
-
-    color: white;
-
-}
-
-#headerbtn {
-    margin: auto;
     margin-top: 25px;
-    padding: 15px;
-
-    
 }
