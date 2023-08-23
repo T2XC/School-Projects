@@ -11,7 +11,7 @@ body {
 
 nav {
     height: 7vh;
-    width: 100vw;   
+    width: 100vw;
 
     position: sticky;
     top: 0;
@@ -72,22 +72,31 @@ nav:hover {
     transition: 0.5s;
 }
 
+.material-symbols-outlined {
+    color: white;
+    float: right;
+    font-size: 4vh !important;
+    margin: 1.5vh;
+    visibility: hidden;
+}
+
+.dropdown {
+    display: none;
+}
+
 header {
     height: 93vh;
 
-    margin: 80px 40px 0px 40px;
-    
-    background-image: url("../img/textlogo.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-color: black;
+    background: black;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../img/textlogo.png") no-repeat center/80vw;
 }
 
 h1 {
-    padding-top: 20vw;
+    padding-top: 44vh;
     text-align: center;
 
-    font-size: 48px;
+    font-size: 5vh;
+    font-weight: 300;
 
     color: white;
 
@@ -101,27 +110,69 @@ h1 {
     
 }
 
+.story {
+    height: 93vh;
+}
+
+@media (max-width:948px) {
+    
+    h1 {
+        padding-top: 44vh;
+        text-align: center;
+    
+        font-size: 3vh;
+    
+        color: white;
+    
+    }
+
+}
+
 @media (max-width:768px) {
     .navbtn {
         display: none;
     }
 
-    header {
-        height: 93vh;
-    
-        margin: 80px 40px 0px 40px;
-        
-        background-image: url("../img/logo.png");
-        background-repeat: no-repeat;
-        background-size: 100%;
+    .material-symbols-outlined {
+        color: white;
+        float: right;
+        font-size: 4vh !important;
+        margin: 1.5vh;
+        visibility: visible;
+    }
+
+    .dropdown {
+        display: none;
+        position: absolute;
         background-color: black;
+        min-width: 160px;
+        z-index: 1;
+    }
+
+    .dropdown a {
+        text-decoration: none;
+        color: white;
+        flex-direction: column;
+    }
+      
+    .menu:hover .dropdown {   
+        display: flex;
+    }
+      
+    .menu:active .dropdown {   
+        display: flex;
+    }
+
+    header {
+        height: 46.5vh;
+        
+        background: black;
+        background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../img/logo.png") no-repeat center/55vw;
     }
     
     h1 {
-        padding-top: 20vw;
+        padding-top: 22vh;
         text-align: center;
-    
-        font-size: 48px;
     
         color: white;
     
@@ -133,5 +184,15 @@ h1 {
         padding: 15px;
     
         
+    }
+}
+
+@media (max-width:420px) {
+
+    header {
+        height: 46.5vh;
+        
+        background: black;
+        background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../img/logo.png") no-repeat center/80vw;
     }
 }
