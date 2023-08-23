@@ -3,6 +3,7 @@
     padding: 0;
 
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
 body {
@@ -112,6 +113,36 @@ h1 {
 
 .story {
     height: 93vh;
+    background: black;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../img/storyphoto.png") no-repeat center/80vw;
+    color: white;
+    text-align: center;
+}
+
+.music {
+    height: 93vh;
+    background: black;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../img/musicphoto.png") no-repeat center/80vw;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    font-size: 6vh;
+    margin-top: 20vh;
+    margin-bottom: 18.5vh;
+}
+
+p {
+    font-size: 3vh;
+    margin-bottom: 18.5vh;
+}
+
+.linkbtn {
+    font-size: 3vh;
+    padding: 1.5vh;
+    margin-bottom: 20vh;
+    border: 0.5vh solid black;
 }
 
 @media (max-width:948px) {
