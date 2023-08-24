@@ -58,7 +58,7 @@ nav:hover {
 }
 
 .navbtn {
-    margin: 1vh 1.5vw 1vh 1.5vw;
+    margin: 1vh 1.5vw 0vh 1.5vw;
     padding: 0.75vh;
     float: left;
 
@@ -68,7 +68,7 @@ nav:hover {
     color: white;
     background-color: black;
     border: 0.25vh solid black;
-    border-radius: 1.5vh;
+    border-radius: 1vh;
 
     transition: 0.25s;
 }
@@ -191,6 +191,9 @@ p {
     font-size: 3vh;
     padding: 1.5vh;
     border: 0.5vh solid black;
+    border-radius: 1vh;
+    color: white;
+    background-color: black;
 }
 
 @media (max-width:948px) {
