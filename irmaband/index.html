@@ -10,6 +10,8 @@
 </head>
 <body>
     
+    <div class="spacer"></div>
+
     <nav>
 
         <img src="img/logo.png" alt="IRMA logo" id="navlogo">
@@ -25,24 +27,26 @@
 
         </div>
 
-        <div class="menu">
-            <span class="material-symbols-outlined dropper">
-                expand_circle_down
-            </span>
-            <div class="dropdown">
-                <a href="story/index.html">Story</a>
-                <a href="music/index.html">Music</a>
-                <a href="news/index.html">News</a>
-                <a href="merch/index.html">Merch</a>
-              </div>
-        </div>
+        <span class="material-symbols-outlined" onclick="openNav()">
+            expand_circle_down
+        </span>
 
     </nav>
+
+    <div id="mySidenav" class="sidenav">
+		
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
+        <a href="index.html" class="sidenavbtn">Story</a>
+        <a href="index.html" class="sidenavbtn">Music</a>
+        <a href="index.html" class="sidenavbtn">News</a>
+        <a href="merch/index.html" class="sidenavbtn">Merch</a>
+        
+    </div>
 
     <header>
 
         <h1>We are the Brian Eno of Heavy Rock.</h1>
-        <!-- <a href="music/index.html" id="headerbtn">Listen to our new single now!</a> -->
 
     </header>
 
@@ -57,6 +61,8 @@
         <p>Bringing the groove and anthemic choruses back to heavy rock! Our debut single 'Knife Play' is out now! </p>
         <button class="linkbtn">Listen Now!</button>
     </div>
+
+    <script src="js/script.js"></script>
 
 </body>
 </html>
