@@ -7,6 +7,7 @@
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>I.R.M.A. Merch</title>
+    <link rel="icon" type="image/x-icon" href="../img/logo.png">
 </head>
 <body>
     
@@ -27,26 +28,32 @@
 
         </div>
 
-        <div class="menu">
-            <span class="material-symbols-outlined dropper">
-                expand_circle_down
-            </span>
-            <div class="dropdown">
-                <a href="story/index.html">Story</a>
-                <a href="music/index.html">Music</a>
-                <a href="news/index.html">News</a>
-                <a href="merch/index.html">Merch</a>
-              </div>
-        </div>
+        <span class="material-symbols-outlined" onclick="openNav()">
+            expand_circle_down
+        </span>
 
     </nav>
+
+    <div id="mySidenav" class="sidenav">
+		
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
+        <a href="index.html" class="sidenavbtn">Story</a>
+        <a href="index.html" class="sidenavbtn">Music</a>
+        <a href="index.html" class="sidenavbtn">News</a>
+        <a href="merch/index.html" class="sidenavbtn">Merch</a>
+        
+    </div>
 
     <header>
 
         <h1>Our Merchandise</h1>
-        <!-- <a href="music/index.html" id="headerbtn">Listen to our new single now!</a> -->
 
     </header>
+
+    <h2>Products</h2>
+
+    <script src="js/script.js"></script>
 
 </body>
 </html>

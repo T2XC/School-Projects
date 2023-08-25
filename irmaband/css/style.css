@@ -196,20 +196,6 @@ p {
     background-color: black;
 }
 
-@media (max-width:948px) {
-    
-    h1 {
-        padding-top: 44vh;
-        text-align: center;
-    
-        font-size: 3vh;
-    
-        color: white;
-    
-    }
-
-}
-
 @media (max-width:1600px) {
     .story {
         height: 93vh;
@@ -230,6 +216,20 @@ p {
     }
 }
 
+@media (max-width:948px) {
+    
+    h1 {
+        padding-top: 44vh;
+        text-align: center;
+    
+        font-size: 3vh;
+    
+        color: white;
+    
+    }
+
+}
+
 @media (max-width:768px) {
     .navbtn {
         display: none;
@@ -242,29 +242,7 @@ p {
         margin: 1.5vh;
         visibility: visible;
     }
-
-    .dropdown {
-        display: none;
-        position: absolute;
-        background-color: black;
-        min-width: 160px;
-        z-index: 1;
-    }
-
-    .dropdown a {
-        text-decoration: none;
-        color: white;
-        flex-direction: column;
-    }
-      
-    .menu:hover .dropdown {   
-        display: flex;
-    }
-      
-    .menu:active .dropdown {   
-        display: flex;
-    }
-
+    
     header {
         height: 46.5vh;
         

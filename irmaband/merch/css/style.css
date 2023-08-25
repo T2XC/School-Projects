@@ -24,6 +24,7 @@ nav {
 
     background-color: black;
     transition: 0.5s;
+    overflow: hidden;
 
     font-weight: 500;
 }
@@ -57,7 +58,7 @@ nav:hover {
 }
 
 .navbtn {
-    margin: 1vh 1.5vw 1vh 1.5vw;
+    margin: 1vh 1.5vw 0vh 1.5vw;
     padding: 0.75vh;
     float: left;
 
@@ -67,7 +68,7 @@ nav:hover {
     color: white;
     background-color: black;
     border: 0.25vh solid black;
-    border-radius: 1.5vh;
+    border-radius: 1vh;
 
     transition: 0.25s;
 }
@@ -82,27 +83,70 @@ nav:hover {
     color: white;
     float: right;
     font-size: 4vh !important;
-    margin: 1.5vh;
+    margin: 1.5vh 3vh 1.5vh 1.5vh;
     visibility: hidden;
+    overflow: hidden;
 }
 
-.menu {
-    display: none;
-}
-
-.dropdown {
-    display: none;
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 200; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: black; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 }
 
 header {
-    height: 93vh;
+    height: 30vh;
 
     background: black;
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../../img/textlogo.png") no-repeat center/80vw;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../../img/retrobg.jpg") no-repeat center/100vw;
 }
 
 h1 {
-    padding-top: 44vh;
+    padding-top: 12vh;
     text-align: center;
 
     font-size: 5vh;
@@ -112,10 +156,37 @@ h1 {
 
 }
 
-#headerbtn {
-    margin: auto;
-    margin-top: 25px;
-    padding: 15px;
+h2 {
+    margin: 3vh;
 
+    font-size: 5vh;
+    font-weight: 300;
+
+    color: white;
+
+}
+
+@media (max-width:768px) {
+    h2 {
+        margin: 3vh;
+        text-align: center;
     
+        font-size: 4vh;
+        font-weight: 300;
+    
+        color: white;
+    
+    }
+    
+    .navbtn {
+        display: none;
+    }
+
+    .material-symbols-outlined {
+        color: white;
+        float: right;
+        font-size: 4vh !important;
+        margin: 1.5vh;
+        visibility: visible;
+    }
 }
