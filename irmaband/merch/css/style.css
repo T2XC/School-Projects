@@ -166,6 +166,41 @@ h2 {
 
 }
 
+h3 {
+    margin: 2.5vh;
+
+    font-size: 2vh;
+    font-weight: 200;
+
+    color: white;
+}
+
+h4 {
+    margin: 1.5vh;
+
+    font-size: 2vh;
+    font-weight: 200;
+
+    color: white;
+}
+
+.products {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 40vw;
+    margin: 5vw;
+}
+
+.productimg {
+    width: 80%;
+    padding: 10%;
+}
+
 @media (max-width:768px) {
     h2 {
         margin: 3vh;
@@ -188,5 +223,15 @@ h2 {
         font-size: 4vh !important;
         margin: 1.5vh;
         visibility: visible;
+    }
+
+    .product {
+        width: 90vw;
+        margin: 10vw;
+    }
+    
+    .productimg {
+        width: 90%;
+        padding: 5%;
     }
 }
