@@ -223,7 +223,6 @@ p {
 }
 
 .members {
-    height: 50vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -243,7 +242,6 @@ p {
 @media (max-width:960px) {
 
     .members {
-        height: 150vh;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
