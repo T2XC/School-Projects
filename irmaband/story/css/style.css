@@ -24,7 +24,6 @@ nav {
 
     background-color: black;
     transition: 0.5s;
-    overflow: hidden;
 
     font-weight: 500;
 }
@@ -100,6 +99,9 @@ nav:hover {
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
   }
   
   /* The navigation menu links */
@@ -236,6 +238,27 @@ p {
 .member img {
     width: 20vw;
     height: 20vw;
+}
+
+@media (max-width:960px) {
+
+    .members {
+        height: 150vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 10vh;
+    }
+
+    .member {
+        width: 60%;
+        margin: 0 7.5vw 0 7.5vw;
+    }
+
+    .member img {
+        width: 60vw;
+        height: 60vw;
+    }
 }
 
 @media (max-width:768px) {
