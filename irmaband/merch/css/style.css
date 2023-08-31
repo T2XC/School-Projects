@@ -204,6 +204,26 @@ h4 {
     padding: 10%;
 }
 
+.color1 {
+    height: 1.25vh;
+    width: 1.25vh;
+    background-color: white;
+    border: .25vh solid #818181;
+    border-radius: 0.75vh;
+    display: inline-block;
+    margin-left: 1vh;
+}
+
+.color2 {
+    height: 1.25vh;
+    width: 1.25vh;
+    background-color: black;
+    border: .25vh solid #818181;
+    border-radius: 0.75vh;
+    display: inline-block;
+    margin-left: 1vh;
+}
+
 @media (max-width:768px) {
     h2 {
         margin: 3vh;
