@@ -202,6 +202,7 @@ h4 {
 .productimg {
     width: 80%;
     padding: 10%;
+    border-radius: 10%;
 }
 
 .color1 {
@@ -222,6 +223,14 @@ h4 {
     border-radius: 0.75vh;
     display: inline-block;
     margin-left: 1vh;
+}
+
+.color1:hover {
+    border: .25vh solid #d4d4d4;
+}
+
+.color2:hover {
+    border: .25vh solid #d4d4d4;
 }
 
 @media (max-width:768px) {
