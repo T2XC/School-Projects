@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: black;
+}
+
+.spacer {
+    height: 7vh;
+    background-color: black;
+}
+
+nav {
+    height: 7vh;
+    width: 100vw;
+
+    position: fixed;
+    top: 0;
+
+    background-color: black;
+    transition: 0.5s;
+    overflow: hidden;
+
+    font-weight: 500;
+}
+
+nav:hover {
+    background-color: #1a1a1a;
+    transition: 0.5s;
+}
+
+.nav {
+    display: inline-block;    
+}
+
+#navlogo {
+    height: 5vh;
+
+    margin: 0;
+    padding: 1vh;
+    
+    float: left;
+}
+
+#navtitle {
+    margin: 2vh;
+    float: left;
+
+    font-size: 1.99vh;
+    text-decoration: none;
+
+    color: white;
+}
+
+.navbtn {
+    margin: 1vh 1.5vw 0vh 1.5vw;
+    padding: 0.75vh;
+    float: left;
+
+    font-size: 1.99vh;
+    text-decoration: none;
+
+    color: white;
+    background-color: black;
+    border: 0.25vh solid black;
+    border-radius: 1vh;
+
+    transition: 0.25s;
+}
+
+.navbtn:hover {
+    border: 0.25vh solid white;
+
+    transition: 0.5s;
+}
+
+.material-symbols-outlined {
+    color: white;
+    float: right;
+    font-size: 4vh !important;
+    margin: 1.5vh 3vh 1.5vh 1.5vh;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 200; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: black; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+header {
+    height: 30vh;
+
+    background: black;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../../img/retrobg.jpg") no-repeat center/100vw;
+}
+
+h1 {
+    padding-top: 12vh;
+    text-align: center;
+
+    font-size: 5vh;
+    font-weight: 300;
+
+    color: white;
+
+}
+
+.news {
+    width: 100vw;
+    padding: 0 5vw 0 5vw;
+}
+
+.article {
+    height: 20vh;
+    width: 80vw;
+    display: flex;
+    flex-wrap: no-wrap;
+    margin: 3vh 0 3vh 0;
+    padding: 0 5vw 0 0;
+    border-radius: 2vw;
+    background: rgb(86,0,156);
+    background: linear-gradient(90deg, rgba(86,0,156,1) 0%, rgba(0,101,157,1) 100%);
+    color: white;
+}
+
+.article img {
+    min-width: 18vh;
+    height: 18vh;
+    margin: 1vh 3vh 1vh 1vh;
+    border-radius: 3.34vh;
+}
+
+.article p {
+    font-size: 1.2vw;
+    padding: 1vw 0 1vw 0;
+}
+
+.article a {
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width:968px) {
+    .article p {
+        font-size: 1.5vh;
+        padding: 1vw 0 1vw 0;
+    }
+}
+
+@media (max-width:768px) {
+    h2 {
+        margin: 3vh;
+        text-align: center;
+    
+        font-size: 4vh;
+        font-weight: 300;
+    
+        color: white;
+    
+    }
+    
+    .navbtn {
+        display: none;
+    }
+
+    .material-symbols-outlined {
+        color: white;
+        float: right;
+        font-size: 4vh !important;
+        margin: 1.5vh;
+        visibility: visible;
+    }
+
+    .news {
+        width: 100vw;
+        padding: 0 3vw 0 3vw;
+    }
+    
+    .article {
+        height: 33vh;
+        width: 94vw;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 3vh;
+        border-radius: 4vw;
+        background: rgb(86,0,156);
+        background: linear-gradient(90deg, rgba(86,0,156,1) 0%, rgba(0,101,157,1) 100%);
+        color: white;
+    }
+
+    .article img {
+        min-width: 12vh;
+        height: 12vh;
+        border-radius: 3.34vh;
+    }
+
+    .article p {
+        font-size: 4vw;
+        padding: 1vw 0 1vw 0;
+    }
+}
