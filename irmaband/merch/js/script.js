@@ -9,15 +9,15 @@ function closeNav() {
 }
 
 function pw1() {
-    document.querySelector(".productimg1").src = "../img/shirtwhite.png";
+    document.querySelector(".productimg1").src = "../img/merch1.jpg";
 }
 
 function pb1() {
-    document.querySelector(".productimg1").src = "../img/shirtblack.png";
+    document.querySelector(".productimg1").src = "../img/merch1.jpg";
 }
 
 function ps1() {
-    document.querySelector(".productimg1").src = "../img/shirts.png";
+    document.querySelector(".productimg1").src = "../img/merch1.jpg";
 }
 
 function pw2() {
