@@ -222,6 +222,10 @@ p {
     background-color: #00189e;
 }
 
+.num {
+    font-size: 2.5vh;
+}
+
 .members {
     display: flex;
     flex-direction: row;
@@ -237,6 +241,7 @@ p {
 .member img {
     width: 20vw;
     height: 20vw;
+    border-radius: 5%;
 }
 
 @media (max-width:960px) {
