@@ -6,7 +6,7 @@
     margin: 0; /* Resets margin */
     padding: 0; /* Resets padding */
     box-sizing: border-box; /* Includes padding and border in content width and height */
-    font-family: Helvetica, sans-serif;
+    font-family: Helvetica, 'Helvetica', Helvetica Neue, helvetica-neue, 'helvetica-neue', 'Helvetica Neue', sans-serif;
 }
 
 /* Site body */
@@ -108,17 +108,50 @@ header {
 .info {
     display: flex;
     flex-wrap: wrap;
+    width: 100vw;
+}
 
-    width: 80vw;
+.infonormal {
+    display: flex;
+    width: 100vw;
+    height: 60vh;
+    flex-wrap: no-wrap;
+}   
+
+.inforeverse {
+    display: flex;  
+    width: 100vw;
+    height: 60vh;   
+    flex-wrap: no-wrap;
 }
 
 .info-box {
-    display: blocK;
     width: 50%;
+    height: 100%;
 }
 
 .info-img {
     width: 50%;
+    height: 100%;
+    align-self: flex-end;
+}
+
+.img1 {
+    background: url('../img/IMG_7379.png') no-repeat center/100%;
+    margin-left: auto;
+}
+
+.img2 {
+    background: url('../img/IMG_7380.png') no-repeat center/100%;
+}
+
+.img3 {
+    background: url('../img/IMG_7381.png') no-repeat center/100%;
+    margin-left: auto;
+}
+
+.img4 {
+    background: url('../img/IMG_7382.png') no-repeat center/100%;
 }
 
 /* Footer */
