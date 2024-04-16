@@ -179,7 +179,6 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    overflow: hidden;
 }
 
 .image {
@@ -207,6 +206,7 @@ button {
     border-radius: 2.5vh;
     padding: 2.5vh;
     margin-top: 5vh;
+    margin-bottom: 5vh;
     transition: 0.5s;
 }
 
@@ -255,6 +255,7 @@ button:hover {
         border-radius: 2.5vh;
         padding: 2.5vh;
         margin-top: 5vh;
+        margin-bottom: 5vh;
         transition: 0.5s;
     }
 }
