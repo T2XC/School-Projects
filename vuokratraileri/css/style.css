@@ -212,7 +212,7 @@ footer {
     background-color: #00d82f; /* Background color */
     color: #f1f1f1; /* Font color */
 
-    margin: 50px 35% 0 35%;
+    margin: 50px 35% 3% 35%;
     padding: 10px 25px 10px;
     text-decoration:  none; /* Removes underline from link */
     font-size: 24px;
@@ -465,7 +465,7 @@ footer {
     background-color: #00d82f; /* Background color */
     color: #f1f1f1; /* Font color */
 
-    margin: 50px 10% 0 10%;
+    margin: 50px 10% 3% 10%;
     padding: 10px 25px 10px;
     text-decoration:  none; /* Removes underline from link */
     font-size: 24px;
